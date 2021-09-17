@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+.wrapper{
+    min-height: 100%;
+    min-width: 100%;
+}
+.wrapper-row{
+    height: 100vh !important;
+}
+.sidebar{
+    height: 100%;
+    box-shadow: 4px 0 20px #aaa;
+    background-color: #00ad8e;
+    color: #ffffff;
+}
+.logo{
+    padding: 10px;
+    font-family: 'League Script', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+.logo a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.logo a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+.sidebar nav ul{
+    list-style-type: none;
+    padding: 0 0 0 15px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.sidebar nav ul a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.3em;
+}
+.sidebar nav ul a:hover{
+    text-decoration: underline;
+}
+.sidebar nav ul i{
+    margin-right: 10px;
+}
+.content{
+    padding: 20px 10px;
+}
+.content-title{
+    color: #00796a;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+.copyright{
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+.addgame{
+    padding: 5px 20px;
+    border-radius: 100%;
+    background-color: #8fc62c;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.addgame-link{
+    text-decoration: none;
+}
+.addgame-link:hover{
+    text-decoration: none;
+}
+.newgame{
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: #8fc62c;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.dashboard-content img{
+    width: 900px;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: black;
+    text-align: center;
+    
+}
+
+.container{
+    max-width: 1140px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+#Card{
+    margin-top: 100px;
+    margin-left: center;
+    padding-left: 250px;
+}
+#cardAluno{
+    margin-left: 100px;
+}
+#cardRecuperarSenha{
+    margin: center;
+    padding-left: 10px;
+}
+
+.bg-primary{
+    background-color: #00ad8e !important;
+}
+.centralizar{
+    margin: 150px auto;
+}
+
+.cadastro{
+    margin: 50px auto;
+}
+.cardCadastro card-body{
+    margin: auto;
+}
+.cardCadastro form table tr td{
+    height: 80px;
+    font-size: 30px;
+    
+}
+.cardCadastro card-body{
+    margin: left;
+}
+
+.jogo{
+    height: 500px;
+    width: 500px;
+   margin: auto;    
+}
+

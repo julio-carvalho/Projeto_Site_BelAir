@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+</head>
+<body>
+	<!-- Menu-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container">
+			
+			<a class="navbar-brand h1 mb-0 " href="index.html" >Bel-Air</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSite">
+				<ul class="navbar-nav mr-auto">
+
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					
+					<li class="nav-item" data-toggle="modal" data-target="#FormModalProfessor">
+						<a class="nav-link" href="#">Professor</a>
+					</li>
+					
+					<li class="nav-item" data-toggle="modal" data-target="#FormModalAluno">
+						<a class="nav-link" href="#">Aluno</a>
+					</li>
+
+				</ul>
+					
+				<form class="form-inline">
+					<input class="form-control mr-4" type="search" placeholder="Buscar...">
+					<button class="btn btn-dark" type="Submit">Ok</button>
+				</form>
+
+			</div>
+		</div>
+	</nav>
+	<div class="row">
+		<div class="col-6 centralizar cadastro">
+			<div class="card cardCadastro">
+				
+					<form>
+						<div class="card-body">
+						<table>
+							<tr>
+								<td><label>Nome</label></td>
+								<td><input type="text" name="nome" required="" /></td>
+							</tr>
+							<tr>
+								<td><label>Sobrenome</label></td>
+								<td><input type="text" name="sobrenome" required="" /></td>
+							</tr>
+							<tr>
+								<td><label>E-mail</label></td>
+								<td><input type="E-mail" name="nome" placeholder="fulano.ciclano@gmail.com" required=""/></td>
+							</tr>
+							<tr>
+								<td><label>Senha</label></td>
+								<td><input type="password" name="senha1" id="senha1" required=""/></td>
+							</tr>
+							<tr>
+								<td><label>Confirmação de Senha</label></td>
+								<td><input type="password" name="senha2" id="senha2" required=""/></td>
+							</tr>
+
+								</table>
+							</div>
+							<div class="card-footer">
+								<input type="submit"/>
+							</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+<div class="footer">
+				<p class="copyright">2019 Bel Air Softwares. Todos os direitos reservados &copy;</p>
+		</div>
+
+
+	<!-- modal -->
+	<div class="modal fade" id="FormModalProfessor" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-tittle">Login</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span >x</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="./areaProfessor.html">
+						<div class="form-group">
+	    					<label for="exEmail">E-mail</label>
+	    					<input type="email" class="form-control" id="exEmail" placeholder="Entrar email">
+	  					</div>
+	  					<div class="form-group">
+	    					<label for="exSenha">Senha</label>
+	    					<input type="password" class="form-control" id="exSenha" placeholder="Senha">
+	    					<a href="esqueceuSenha.html">esqueceu a senha <br></a>
+	    					<a href="cadastro.html">Registrar</a>
+	  					</div>
+	  					<button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="FormModalAluno" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-tittle">Login</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>x</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+
+	  					<div class="form-group">
+	    					<label for="login_aluno">Codigo</label>
+	    					<input type="text" class="form-control" id="login_aluno" placeholder="insira o codigo">
+
+	  					</div>
+	  					<button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

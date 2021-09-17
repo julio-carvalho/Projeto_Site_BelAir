@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<title>Inicio - Bel-Air</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+
+</head>
+<body>
+	<!-- Menu-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container">
+		
+			<a class="navbar-brand h1 mb-0 " href="index.html" >Bel-Air</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSite">
+				<ul class="navbar-nav mr-auto">
+
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					
+					<li class="nav-item" data-toggle="modal" data-target="#FormModalProfessor">
+						<a class="nav-link" href="#">Professor</a>
+					</li>
+					
+					<li class="nav-item" data-toggle="modal" data-target="#FormModalAluno">
+						<a class="nav-link" href="#">Aluno</a>
+					</li>
+
+				</ul>
+					
+				<form class="form-inline">
+					<input class="form-control mr-4" type="search" placeholder="Buscar...">
+					<button class="btn btn-dark" type="Submit">Ok</button>
+				</form>
+
+			</div>
+		</div>
+	</nav>
+
+<!-- Card -->
+	<div class="container" id="Card" >
+		<div class="row mb-6">
+			<div class="col-sm-3">
+
+				<div class="card">
+					<img class="card-img-top" src="img/Professor-icon.png">
+					<div class="card-body">
+						<h3 class="card-tittle">Professor</h3>
+					</div>
+
+					<div class="card-footer">
+						<button type="button" class="btn btn-primary"data-toggle="modal" data-target="#FormModalProfessor">Acessar</button>
+
+					</div>
+				</div>
+
+			</div>
+		
+			<div class="col-sm-3" id="cardAluno">
+
+				<div class="card" >
+					<img class="card-img-top" src="img/Aluno-icon.png" >
+					<div class="card-body">
+						<h3 class="card-tittle">Aluno</h3>
+					</div>
+					<div class="card-footer">
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#FormModalAluno">Acessar</button>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+		<div class="footer">
+				<p class="copyright">2019 Bel Air Softwares. Todos os direitos reservados &copy;</p>
+		</div>
+
+
+	<!-- modal -->
+	<div class="modal fade" id="FormModalProfessor" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-tittle">Login</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span >x</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="./areaProfessor.html">
+						<div class="form-group">
+	    					<label for="exEmail">E-mail</label>
+	    					<input type="email" class="form-control" id="exEmail" placeholder="Entrar email" required="">
+	  					</div>
+	  					<div class="form-group">
+	    					<label for="exSenha">Senha</label>
+	    					<input type="password" class="form-control" id="exSenha" placeholder="Senha" required="">
+	    					<a href="esqueceuSenha.html">esqueceu a senha <br></a>
+	    					<a href="cadastro.html">Registrar</a>
+	  					</div>
+	  					<button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="FormModalAluno" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-tittle">Login</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>x</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="./jogo.html">
+
+	  					<div class="form-group">
+	    					<label for="login_aluno">Codigo</label>
+	    					<input type="text" class="form-control" placeholder="insira o codigo"required="">
+	    					<label>Digite seu nome para entrar no Jogo</label>
+							<input type="text"  class="form-control" name="nomeAluno" required="" >
+
+	  					</div>
+	  					<button type="submit" class="btn btn-primary">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
